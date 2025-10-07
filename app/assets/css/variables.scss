@@ -1,0 +1,32 @@
+:root[data-theme="light"] {
+  --bg: #fcfcfc;
+  --text: #171717;
+  --primary: #25282c;
+  --secondary: #ededed;
+  --translucent-secondary: #ededed35;
+  --accent: #00aab3;
+  --reverse-accent: #4df6ff;
+  --shadow: #d1cdcd;
+  --translucent-border: #25282c3f;
+  --bg-line: #ededed55;
+}
+
+:root[data-theme="dark"] {
+  --bg: #171717;
+  --text: #fcfcfc;
+  --primary: #ededed;
+  --secondary: #25282c;
+  --translucent-secondary: #282828c5;
+  --accent: #4df6ff;
+  --reverse-accent: #00aab3;
+  --shadow: #070808;
+  --translucent-border: #ededed3a;
+  --bg-line: #25282c45;
+}
+
+:root {
+  --header-font: "Noto Sans JP", sans-serif;
+  --alternate-font: "Ubuntu", sans-serif;
+  --body-font: "Inter", sans-serif;
+  --logo-font: "BBH Sans Bartle", sans-serif;
+}
