@@ -50,7 +50,7 @@ const { isDark } = useTheme();
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #73c0fc;
+  background-color: var(--accent);
   transition: background-color 0.4s;
   border-radius: 25px;
 }
@@ -89,7 +89,7 @@ const { isDark } = useTheme();
 .moon.active svg {
   top: 4px;
   left: 4px;
-  fill: #73c0fc;
+  fill: var(--primary);
   opacity: 1;
   animation: tilt 5s linear infinite;
 }
@@ -119,7 +119,7 @@ const { isDark } = useTheme();
 }
 
 .input:checked + .slider {
-  background-color: #183153;
+  background-color: var(--reverse-accent);
 }
 
 .input:focus + .slider {
