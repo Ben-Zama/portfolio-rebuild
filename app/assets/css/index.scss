@@ -36,7 +36,7 @@
     }
   }
 
-  @media (min-width: 600px) and (max-width: 1023px) {
+  @media (min-width: 600px) and (max-width: 1279px) {
     .layout {
       grid-template-columns: repeat(2, 1fr);
       .intro,
@@ -46,7 +46,7 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1280px) {
     .layout {
       padding: 50px;
       grid-template-columns: repeat(4, 1fr);
@@ -205,8 +205,8 @@
               align-items: center;
               justify-content: center;
               img {
-                width: 100px;
-                height: 100px;
+                width: 125px;
+                height: 125px;
                 object-fit: contain;
               }
             }
@@ -281,7 +281,7 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .indexPage {
     .layout {
       .stats {
