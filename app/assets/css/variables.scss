@@ -1,32 +1,39 @@
 :root[data-theme="light"] {
   --bg: #fcfcfc;
+  --translucent-bg: #fcfcfc90;
   --text: #171717;
   --primary: #25282c;
+  --translucent-primary: #25282c90;
   --secondary: #ededed;
-  --translucent-secondary: #ededed35;
+  --translucent-secondary: #ededed90;
   --accent: #00aab3;
+  --translucent-accent: #00aab390;
   --reverse-accent: #4df6ff;
-  --shadow: #d1cdcd;
-  --translucent-border: #25282c3f;
+  --shadow: #e1e1e1;
   --bg-line: #ededed55;
+  --translucent-border: #25282c25;
 }
 
 :root[data-theme="dark"] {
   --bg: #171717;
+  --translucent-bg: #17171790;
   --text: #fcfcfc;
   --primary: #ededed;
+  --translucent-primary: #ededed90;
   --secondary: #25282c;
-  --translucent-secondary: #282828c5;
+  --translucent-secondary: #28282890;
   --accent: #4df6ff;
+  --translucent-accent: #4df6ff90;
   --reverse-accent: #00aab3;
-  --shadow: #070808;
-  --translucent-border: #ededed3a;
+  --shadow: #0f1111;
   --bg-line: #25282c45;
+  --translucent-border: #ededed15;
 }
 
 :root {
   --header-font: "Noto Sans JP", sans-serif;
   --alternate-font: "Ubuntu", sans-serif;
   --body-font: "Inter", sans-serif;
-  --logo-font: "BBH Sans Bartle", sans-serif;
+  --logo-font: "Syne", sans-serif;
+  --signature-font: "Mr De Haviland", cursive;
 }

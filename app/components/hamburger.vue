@@ -53,7 +53,7 @@ const emit = defineEmits(['update:modelValue']);
 
 .line {
   fill: none;
-  stroke: var(--primary);
+  stroke: var(--text);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2.5;

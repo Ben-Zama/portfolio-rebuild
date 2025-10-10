@@ -2,7 +2,7 @@
   <div class="mobile-menu">
 
     <nav>
-      <nuxt-link @click="$emit('close')" to="">
+      <nuxt-link @click="$emit('close')" to="/">
         <div>
           <p>Home</p>
           <div class="icons">
@@ -12,7 +12,7 @@
         </div>
       </nuxt-link>
       <hr>
-      <nuxt-link @click="$emit('close')" to="">
+      <nuxt-link @click="$emit('close')" to="/about">
         <div>
           <p>About</p>
           <div class="icons">
@@ -22,7 +22,7 @@
         </div>
       </nuxt-link>
       <hr>
-      <nuxt-link @click="$emit('close')" to="">
+      <nuxt-link @click="$emit('close')" to="/services">
         <div>
           <p>Services</p>
           <div class="icons">
@@ -32,7 +32,7 @@
         </div>
       </nuxt-link>
       <hr>
-      <nuxt-link @click="$emit('close')" to="">
+      <nuxt-link @click="$emit('close')" to="/portfolio">
         <div>
           <p>Projects</p>
           <div class="icons">
@@ -42,7 +42,7 @@
         </div>
       </nuxt-link>
       <hr>
-      <nuxt-link @click="$emit('close')" to="">
+      <nuxt-link @click="$emit('close')" to="/contact">
         <div>
           <p>Contact</p>
           <div class="icons">
