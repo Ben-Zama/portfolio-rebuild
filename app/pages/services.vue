@@ -84,8 +84,11 @@
         <h2><span>Tools</span> & <span>libraries</span> I use</h2>
       </div>
       <div class="grid">
-        <div v-for="item in skills" :key="item.id" class="box">
+        <div v-for="item in skills" :key="item.id" class="container">
+          <div class="box">
           <img :src="item.icon" alt="" />
+        </div>
+        <p>{{ item.name }}</p>
         </div>
       </div>
     </div>
@@ -137,18 +140,18 @@ import MongoDB from "~/assets/icons/mongo.png";
 import Gsap from "~/assets/icons/gsap.svg";
 
 const skills = [
-  { id: 1, icon: Html },
-  { id: 2, icon: Css },
-  { id: 3, icon: Js },
-  { id: 4, icon: Sass },
-  { id: 5, icon: Tailwind },
-  { id: 6, icon: Ts },
-  { id: 7, icon: Vue },
-  { id: 8, icon: Nuxt },
-  { id: 9, icon: Quasar },
-  { id: 10, icon: Pinia },
-  { id: 11, icon: MongoDB },
-  { id: 12, icon: Gsap },
+  { id: 1, name: 'HTML', icon: Html },
+  { id: 2, name: 'CSS', icon: Css },
+  { id: 3, name: 'Javascript', icon: Js },
+  { id: 4, name: 'Sass', icon: Sass },
+  { id: 5, name: 'TailwindCSS', icon: Tailwind },
+  { id: 6, name: 'Typescript', icon: Ts },
+  { id: 7, name: 'VueJS', icon: Vue },
+  { id: 8, name: 'NuxtJS', icon: Nuxt },
+  { id: 9, name: 'Quasar', icon: Quasar },
+  { id: 10, name: 'Pinia', icon: Pinia },
+  { id: 11, name: 'MongoDB', icon: MongoDB },
+  { id: 12, name: 'GSAP', icon: Gsap },
 ];
 
 const faqs = ref([
