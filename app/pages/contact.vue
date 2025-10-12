@@ -4,7 +4,7 @@
       <div class="container">
         <div class="heading">
           <pageTitle title="Contact" />
-          <h2>Get in touch</h2>
+          <h2>Get in <span>touch</span></h2>
         </div>
         <hr />
         <div class="box">
