@@ -33,6 +33,47 @@
       </div>
     </div>
 
+    <div class="benefits">
+      <div class="heading">
+        <PageTitle title="Benefits" />
+        <h2><span>Benefits</span> of my services</h2>
+      </div>
+      <div class="grid">
+        <div class="container">
+          <PhSpeedometer :size="36" />
+          <h3>Fast Performance</h3>
+          <p>
+            Enjoy lightning-fast load times and seamless interactions, ensuring an optimal
+            user experience.
+          </p>
+        </div>
+        <div class="container">
+          <PhDevices :size="36" />
+          <h3>Fully Responsive</h3>
+          <p>
+            Your website will look flawless on any device, adapting to different screen
+            sizes with ease.
+          </p>
+        </div>
+        <div class="container">
+          <PhFileMagnifyingGlass :size="36" />
+          <h3>SEO Optimization</h3>
+          <p>
+            Built with SEO best practices to help your website rank higher in search
+            engine results.
+          </p>
+        </div>
+        <div class="container">
+          <PhCertificate :size="36" />
+          <h3>W3 Validated</h3>
+          <p>
+            Code validated by W3C standards for clean, compliant, and reliable performance
+            across all devices.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="work-process">
       <div class="heading">
         <pageTitle title="Work Process" />
@@ -86,15 +127,15 @@
       <div class="grid">
         <div v-for="item in skills" :key="item.id" class="container">
           <div class="box">
-          <img :src="item.icon" alt="" />
-        </div>
-        <p>{{ item.name }}</p>
+            <img :src="item.icon" alt="" />
+          </div>
+          <p>{{ item.name }}</p>
         </div>
       </div>
     </div>
 
     <div class="marquee">
-        <marquee />
+      <marquee />
     </div>
 
     <div class="faqs">
@@ -110,9 +151,7 @@
         >
           <div class="title" @click="toggle(index)">
             <h2>{{ item.title }}</h2>
-              <i
-                :class="activeIndex === index ? 'bi bi-dash' : 'bi bi-plus'"
-              ></i>
+            <i :class="activeIndex === index ? 'bi bi-dash' : 'bi bi-plus'"></i>
           </div>
           <div class="body">
             <p :class="{ visible: activeIndex === index }">{{ item.body }}</p>
@@ -124,7 +163,16 @@
 </template>
 
 <script setup>
-import { PhCode, PhDeviceMobile, PhDot, PhGear } from "@phosphor-icons/vue";
+import {
+  PhCertificate,
+  PhCode,
+  PhDeviceMobile,
+  PhDevices,
+  PhDot,
+  PhFileMagnifyingGlass,
+  PhGear,
+  PhSpeedometer,
+} from "@phosphor-icons/vue";
 
 import Html from "~/assets/icons/html.png";
 import Css from "~/assets/icons/css.png";
@@ -140,28 +188,30 @@ import MongoDB from "~/assets/icons/mongo.png";
 import Gsap from "~/assets/icons/gsap.svg";
 
 const skills = [
-  { id: 1, name: 'HTML', icon: Html },
-  { id: 2, name: 'CSS', icon: Css },
-  { id: 3, name: 'Javascript', icon: Js },
-  { id: 4, name: 'Sass', icon: Sass },
-  { id: 5, name: 'TailwindCSS', icon: Tailwind },
-  { id: 6, name: 'Typescript', icon: Ts },
-  { id: 7, name: 'VueJS', icon: Vue },
-  { id: 8, name: 'NuxtJS', icon: Nuxt },
-  { id: 9, name: 'Quasar', icon: Quasar },
-  { id: 10, name: 'Pinia', icon: Pinia },
-  { id: 11, name: 'MongoDB', icon: MongoDB },
-  { id: 12, name: 'GSAP', icon: Gsap },
+  { id: 1, name: "HTML", icon: Html },
+  { id: 2, name: "CSS", icon: Css },
+  { id: 3, name: "Javascript", icon: Js },
+  { id: 4, name: "Sass", icon: Sass },
+  { id: 5, name: "TailwindCSS", icon: Tailwind },
+  { id: 6, name: "Typescript", icon: Ts },
+  { id: 7, name: "VueJS", icon: Vue },
+  { id: 8, name: "NuxtJS", icon: Nuxt },
+  { id: 9, name: "Quasar", icon: Quasar },
+  { id: 10, name: "Pinia", icon: Pinia },
+  { id: 11, name: "MongoDB", icon: MongoDB },
+  { id: 12, name: "GSAP", icon: Gsap },
 ];
 
 const faqs = ref([
   {
     title: "What tech do you use?",
-    body: "HTML5, CSS3 (or SCSS), vanilla JS, and Vue/Nuxt. I can integrate Tailwind or Bootstrap if requested.",
+    body:
+      "HTML5, CSS3 (or SCSS), vanilla JS, and Vue/Nuxt. I can integrate Tailwind or Bootstrap if requested.",
   },
   {
     title: "What do you need from Me?",
-    body: "Provide design files (Figma, XD, Sketch), brand assets (logos, colors, fonts), and content. If you lack designs, I can help with basic wireframes.",
+    body:
+      "Provide design files (Figma, XD, Sketch), brand assets (logos, colors, fonts), and content. If you lack designs, I can help with basic wireframes.",
   },
   {
     title: "In how many days can you deliver?",
@@ -169,11 +219,13 @@ const faqs = ref([
   },
   {
     title: "Can you handle deployment?",
-    body: "Yes. I supply deployment instructions for Netlify, Vercel, or your preferred host. Assisted deployment is available for an extra fee.",
+    body:
+      "Yes. I supply deployment instructions for Netlify, Vercel, or your preferred host. Assisted deployment is available for an extra fee.",
   },
   {
     title: "Is SEO included?",
-    body: "I implement SEO basics—semantic HTML, meta tags, and optimized assets to boost ranking and performance.",
+    body:
+      "I implement SEO basics—semantic HTML, meta tags, and optimized assets to boost ranking and performance.",
   },
 ]);
 
