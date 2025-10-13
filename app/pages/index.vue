@@ -58,7 +58,7 @@
               }"
             >
               <SwiperSlide v-for="skill in skills" :key="skill.id">
-                <img :src="skill.icon" />
+                <img :src="isDark ? skill.iconDark : skill.icon" />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -116,6 +116,8 @@ const counterOptions = {
   suffix: ' +'
 }
 
+const { isDark } = useTheme()
+
 import Html from "~/assets/icons/html.png";
 import Css from "~/assets/icons/css.png";
 import Js from "~/assets/icons/js.png";
@@ -124,23 +126,24 @@ import Tailwind from "~/assets/icons/tailwind.png";
 import Ts from "~/assets/icons/typescript.png";
 import Vue from "~/assets/icons/vue.png";
 import Nuxt from "~/assets/icons/nuxt.png";
-import Quasar from "~/assets/icons/quasar.png";
+import Quasar from "~/assets/icons/quasar.svg";
+import quasarDark from "~/assets/icons/quasar-dark.svg";
 import Pinia from "~/assets/icons/pinia.svg";
-import MongoDB from "~/assets/icons/mongo.png";
+import Appwrite from "~/assets/icons/appwrite.png";
 import Gsap from "~/assets/icons/gsap.svg";
 
 const skills = [
-  { id: 1, icon: Html },
-  { id: 2, icon: Css },
-  { id: 3, icon: Js },
-  { id: 4, icon: Sass },
-  { id: 5, icon: Tailwind },
-  { id: 6, icon: Ts },
-  { id: 7, icon: Vue },
-  { id: 8, icon: Nuxt },
-  { id: 9, icon: Quasar },
-  { id: 10, icon: Pinia },
-  { id: 11, icon: MongoDB },
-  { id: 12, icon: Gsap },
+  { id: 1, name: "HTML", icon: Html, iconDark: Html },
+  { id: 2, name: "CSS", icon: Css, iconDark: Css },
+  { id: 3, name: "Javascript", icon: Js, iconDark: Js },
+  { id: 4, name: "Sass", icon: Sass, iconDark: Sass },
+  { id: 5, name: "TailwindCSS", icon: Tailwind, iconDark: Tailwind },
+  { id: 6, name: "Typescript", icon: Ts, iconDark: Ts },
+  { id: 7, name: "VueJS", icon: Vue, iconDark: Vue },
+  { id: 8, name: "NuxtJS", icon: Nuxt, iconDark: Nuxt },
+  { id: 9, name: "Quasar", icon: Quasar, iconDark: quasarDark },
+  { id: 10, name: "Pinia", icon: Pinia, iconDark: Pinia },
+  { id: 11, name: "Appwrite", icon: Appwrite, iconDark: Appwrite },
+  { id: 12, name: "GSAP", icon: Gsap, iconDark: Gsap },
 ];
 </script>

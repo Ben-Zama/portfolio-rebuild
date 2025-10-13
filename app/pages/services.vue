@@ -80,40 +80,12 @@
         <h2>How I <span>work</span></h2>
       </div>
       <div class="grid">
-        <div class="container">
-          <p class="number">01</p>
+        <div v-for="item in workProcess" :key="item" class="container">
+          <p class="number">{{ item.number }}</p>
           <PhDot :size="100" />
-          <h3>Discovery & Planning</h3>
+          <h3>{{ item.title }}</h3>
           <p class="text">
-            We discuss your goals, audience, and project scope to align on vision,
-            features, and timelines.
-          </p>
-        </div>
-        <div class="container">
-          <p class="number">02</p>
-          <PhDot :size="100" />
-          <h3>Design & Structure</h3>
-          <p class="text">
-            I create a layout and user interface plan to ensure the structure is clean,
-            responsive, and user-friendly.
-          </p>
-        </div>
-        <div class="container">
-          <p class="number">03</p>
-          <PhDot :size="100" />
-          <h3>Frontend Development</h3>
-          <p class="text">
-            Using HTML, CSS, JavaScript, and modern frameworks, I bring the design to life
-            with clean and optimized code.
-          </p>
-        </div>
-        <div class="container">
-          <p class="number">04</p>
-          <PhDot :size="100" />
-          <h3>Testing & Delivery</h3>
-          <p class="text">
-            I test across devices and browsers, fix bugs, and deliver a fast, accessible,
-            and fully functional website.
+            {{ item.text }}
           </p>
         </div>
       </div>
@@ -127,7 +99,7 @@
       <div class="grid">
         <div v-for="item in skills" :key="item.id" class="container">
           <div class="box">
-            <img :src="item.icon" alt="" />
+            <img :key="isDark" :src="isDark ? item.iconDark : item.icon" alt="" />
           </div>
           <p>{{ item.name }}</p>
         </div>
@@ -182,24 +154,54 @@ import Tailwind from "~/assets/icons/tailwind.png";
 import Ts from "~/assets/icons/typescript.png";
 import Vue from "~/assets/icons/vue.png";
 import Nuxt from "~/assets/icons/nuxt.png";
-import Quasar from "~/assets/icons/quasar.png";
+import Quasar from "~/assets/icons/quasar.svg";
+import quasarDark from "~/assets/icons/quasar-dark.svg";
 import Pinia from "~/assets/icons/pinia.svg";
-import MongoDB from "~/assets/icons/mongo.png";
+import Appwrite from "~/assets/icons/appwrite.png";
 import Gsap from "~/assets/icons/gsap.svg";
 
+const { isDark } = useTheme();
+
+const workProcess = [
+  {
+    number: "01",
+    title: "Discovery & Planning",
+    text:
+      "We discuss your goals, audience, and project scope to align on vision,features, and timelines.",
+  },
+  {
+    number: "02",
+    title: "Design & Structure",
+    text:
+      "I create a layout and user interface plan to ensure the structure is clean, responsive, and user-friendly.",
+  },
+  {
+    number: "03",
+    title: "Frontend Development",
+    text:
+      "Using HTML, CSS, JavaScript, and modern frameworks, I bring the design to life with clean and optimized code.",
+  },
+  {
+    number: "04",
+    title: "Testing & Delivery",
+    text:
+      "I test across devices and browsers, fix bugs, and deliver a fast, accessible, and fully functional website.",
+  },
+];
+
 const skills = [
-  { id: 1, name: "HTML", icon: Html },
-  { id: 2, name: "CSS", icon: Css },
-  { id: 3, name: "Javascript", icon: Js },
-  { id: 4, name: "Sass", icon: Sass },
-  { id: 5, name: "TailwindCSS", icon: Tailwind },
-  { id: 6, name: "Typescript", icon: Ts },
-  { id: 7, name: "VueJS", icon: Vue },
-  { id: 8, name: "NuxtJS", icon: Nuxt },
-  { id: 9, name: "Quasar", icon: Quasar },
-  { id: 10, name: "Pinia", icon: Pinia },
-  { id: 11, name: "MongoDB", icon: MongoDB },
-  { id: 12, name: "GSAP", icon: Gsap },
+  { id: 1, name: "HTML", icon: Html, iconDark: Html },
+  { id: 2, name: "CSS", icon: Css, iconDark: Css },
+  { id: 3, name: "Javascript", icon: Js, iconDark: Js },
+  { id: 4, name: "Sass", icon: Sass, iconDark: Sass },
+  { id: 5, name: "TailwindCSS", icon: Tailwind, iconDark: Tailwind },
+  { id: 6, name: "Typescript", icon: Ts, iconDark: Ts },
+  { id: 7, name: "VueJS", icon: Vue, iconDark: Vue },
+  { id: 8, name: "NuxtJS", icon: Nuxt, iconDark: Nuxt },
+  { id: 9, name: "Quasar", icon: Quasar, iconDark: quasarDark },
+  { id: 10, name: "Pinia", icon: Pinia, iconDark: Pinia },
+  { id: 11, name: "Appwrite", icon: Appwrite, iconDark: Appwrite },
+  { id: 12, name: "GSAP", icon: Gsap, iconDark: Gsap },
 ];
 
 const faqs = ref([

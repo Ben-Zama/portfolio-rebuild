@@ -62,7 +62,9 @@
         flex-direction: column;
         gap: 15px;
         border-radius: 8px;
-        box-shadow: 2px 2px 8px var(--shadow), -1px -1px var(--accent);
+        box-shadow:
+          2px 2px 8px var(--shadow),
+          -1px -1px var(--accent);
         svg {
           color: var(--accent);
         }
@@ -143,6 +145,7 @@
           background: var(--secondary);
           border-radius: 20px;
           transform: rotate(45deg);
+          box-shadow: -1px 1px var(--accent);
           img {
             width: 50%;
             height: 50%;
@@ -261,7 +264,8 @@
         grid-template-columns: repeat(4, 1fr);
         .container {
           .box {
-            img {
+            img,
+            svg {
               width: 45%;
               height: 45%;
             }
@@ -318,7 +322,8 @@
         grid-template-columns: repeat(6, 1fr);
         .container {
           .box {
-            img {
+            img,
+            svg {
               width: 45%;
               height: 45%;
             }
