@@ -6,40 +6,39 @@
         <h2>My <span>projects</span> showcase</h2>
       </div>
       <div class="projects-container">
-        <div v-for="n in 3" :key="n" class="project">
+        <div v-for="item in projects" :key="item" class="project">
           <div class="image">
-            <img src="~/assets/images/demo.png" alt="" />
+            <img :src="item.image" alt="" />
           </div>
           <div class="info">
-            <h2 class="title">Nexus AI Event</h2>
+            <h2 class="title">{{ item.title }}</h2>
             <p class="about">
-              Developed an online learning platform with course management, quizzes and
-              progress tracking.
+              {{ item.about }}
             </p>
             <div class="container">
               <h3>Project Info</h3>
               <hr />
-              <div class="span">
+              <div v-if="item.client" class="span">
                 <h4>Client</h4>
-                <p>Me</p>
+                <p>{{ item.client }}</p>
               </div>
-              <hr />
+              <hr v-if="item.client" />
               <div class="span">
                 <h4>Completion Time</h4>
-                <p>1 month</p>
+                <p>{{ item.time }}</p>
               </div>
               <hr />
               <div class="span">
                 <h4>Technolgies</h4>
-                <p>Vue, Sass, MongoDB</p>
+                <p>{{ item.tech }}</p>
               </div>
               <hr />
               <div class="actions">
-                <a href="">
+                <a target="_blank" :href="item.liveDemo">
                   <PhArrowUpRight />
                   <p>Live Demo</p>
                 </a>
-                <a href="">
+                <a target="_blank" :href="item.githubLink">
                   <PhGithubLogo />
                   <p>View on Github</p>
                 </a>
@@ -53,7 +52,35 @@
 </template>
 
 <script setup>
-import { PhArrowUpRight, PhGithubLogo } from '@phosphor-icons/vue';
-</script>
+import { PhArrowUpRight, PhGithubLogo } from "@phosphor-icons/vue";
 
-<style lang="scss" scoped></style>
+const projects = [
+  {
+    image: 'https://i.ibb.co/4ZxC2WsJ/halo.webp',
+    title: "Halo Oil",
+    about: "Developed an online learning platform with course management, quizzes and progress tracking.",
+    time: '1 month',
+    tech: 'Nuxt & Scss',
+    githubLink: 'https://github.com/Ben-Zama/Halo-oil.git',
+    liveDemo: 'https://halo-oil.vercel.app/'
+  },
+  {
+    image: 'https://i.ibb.co/MWYmdGj/nexus.webp',
+    title: "Nexus AI Event",
+    about: "Developed an online learning platform with course management, quizzes and progress tracking.",
+    time: '1 month',
+    tech: 'Nuxt & Scss',
+    githubLink: 'https://github.com/Ben-Zama/Nexus-Ai-Event.git',
+    liveDemo: 'https://nexus-ai-event.vercel.app/'
+  },
+  {
+    image: 'https://i.ibb.co/PGfBX2zy/laurelwood.webp',
+    title: "Laurelwood",
+    about: "Developed an online learning platform with course management, quizzes and progress tracking.",
+    time: '1 month',
+    tech: 'Nuxt & Scss',
+    githubLink: 'https://github.com/Ben-Zama/Laurelwood.git',
+    liveDemo: 'https://laurelwood.vercel.app/'
+  },
+];
+</script>

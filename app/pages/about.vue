@@ -120,5 +120,3 @@ const counterOptions = {
 
 const showMore = ref(false);
 </script>
-
-<style lang="scss" scoped></style>
