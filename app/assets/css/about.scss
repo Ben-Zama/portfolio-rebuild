@@ -37,22 +37,22 @@
 
   @media (min-width: 600px) and (max-width: 1279px) {
     .layout {
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(8, 1fr);
       .grid-card-container {
         height: 100%;
       }
       .photo,
       .resume {
-        grid-column: span 2;
+        grid-column: span 3;
       }
       .work,
       .education,
       .stats,
       .links {
-        grid-column: span 3;
+        grid-column: span 4;
       }
       .about {
-        grid-column: span 4;
+        grid-column: span 5;
       }
       .about {
         grid-row: span 2;
@@ -303,11 +303,15 @@
         justify-content: space-evenly;
         .box {
           width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           text-align: center;
           font-family: var(--alternate-font);
           font-weight: bold;
           font-size: 30px;
           p {
+            width: 75%;
             font-weight: normal;
             font-size: 15px;
           }

@@ -12,19 +12,23 @@
         <gridCard :showTitle="false" :showButton="false">
           <div class="text" :class="{ expanded: showMore }">
             <p>
-              I’m a passionate Frontend Developer with two years of experience
-              transforming design concepts into fast, responsive, and accessible web
-              applications. I specialize in modern JavaScript (ES6+), TypeScript, and
-              Vue.js, paired with CSS3, Sass, Tailwind, or Bootstrap to create
-              pixel-perfect interfaces. My workflow emphasizes clean, maintainable code,
-              performance optimization, and cross‑browser compatibility, ensuring every
-              site feels native on desktop and mobile alike. I thrive on collaboration:
-              working closely with designers, back‑end engineers, and product managers to
-              bring visions to life—and I’m always eager to learn new technologies or
-              improve existing processes. Whether architecting complex component
-              libraries, integrating RESTful APIs, or fine‑tuning animations for a
-              seamless user experience, I aim to deliver solutions that delight users and
-              drive business results.
+              I’m Benzama Musa — a frontend developer who loves bringing ideas
+              to life through clean code and captivating interfaces. For the
+              past 3 years, I’ve been turning design concepts into fast,
+              responsive, and accessible web experiences that feel just as
+              smooth on mobile as they do on desktop. <br /> <br>
+              My toolkit includes modern JavaScript (ES6+), TypeScript, and
+              Vue.js — with a flair for crafting pixel-perfect UIs using CSS,
+              Sass & Tailwind. I obsess over performance, maintainability, and
+              the kind of small details that make users go “wow.” <br /> <br>
+              Collaboration fuels my process — I love teaming up with designers,
+              engineers, and product minds to push ideas beyond mockups. Whether
+              it’s architecting reusable component libraries, integrating APIs,
+              or polishing animations until they flow, I’m all about creating
+              web experiences that look sharp and perform even sharper. <br /> <br>
+              And when I’m not deep in code? I’m probably experimenting with new
+              tech, improving my workflow, or just sketching out my next
+              creative project.
             </p>
           </div>
           <button @click="showMore = !showMore">
@@ -80,18 +84,22 @@
       <div class="grid-card-container stats">
         <gridCard :showTitle="false" :showButton="false">
           <div class="box">
-            <countUp :end-val="2" :duration="5" />
-            <p>Years Experience</p>
+            <countUp :end-val="3" :duration="5" />
+            <p>Years crafting code</p>
           </div>
           <div class="box">
             <countUp :end-val="25" :duration="5" :options="counterOptions" />
-            <p>Completed Projects</p>
+            <p>Projects completed and counting</p>
           </div>
         </gridCard>
       </div>
 
       <div class="grid-card-container links">
-        <gridCard caption="Connect with me" title="Profiles" :showButton="false">
+        <gridCard
+          caption="Find me around the web"
+          title="Profiles"
+          :showButton="false"
+        >
           <div class="icons">
             <a href="">
               <i class="bi bi-github"></i>

@@ -10,24 +10,26 @@
           <PhCode :size="48" />
           <h3>Web Development</h3>
           <p>
-            I build fast, responsive websites using modern technologies (HTML5, CSS3,
-            JavaScript, VueJS, etc.) to deliver an engaging user experience.
+            I build modern, high-performing websites using cutting-edge tech
+            like Vue.js, Nuxt, and Tailwind. Every line of code is optimized for
+            speed, responsiveness, and that smooth, “this-just-works” feel.
           </p>
         </div>
         <div class="box">
           <PhDeviceMobile :size="48" />
           <h3>Mobile App Development</h3>
           <p>
-            I develop cross‑platform mobile apps with Quasar framework, ensuring smooth
-            performance and native‑like UX on iOS and Android.
+            I develop cross‑platform mobile apps with Quasar framework, ensuring
+            smooth performance and native‑like UX on iOS and Android.
           </p>
         </div>
         <div class="box">
           <PhGear :size="48" />
           <h3>Web Maintenance</h3>
           <p>
-            I provide ongoing support—updates, security patches, backups, and performance
-            tweaks—to keep your site running smoothly.
+            Websites need care. I handle updates, backups, performance tuning,
+            and bug fixes — so you can focus on your business while your site
+            stays secure and lightning-fast.
           </p>
         </div>
       </div>
@@ -43,32 +45,32 @@
           <PhSpeedometer :size="36" />
           <h3>Fast Performance</h3>
           <p>
-            Enjoy lightning-fast load times and seamless interactions, ensuring an optimal
-            user experience.
+            Enjoy lightning-fast load times and seamless interactions, ensuring
+            an optimal user experience.
           </p>
         </div>
         <div class="container">
           <PhDevices :size="36" />
           <h3>Fully Responsive</h3>
           <p>
-            Your website will look flawless on any device, adapting to different screen
-            sizes with ease.
+            From widescreens to smartphones, your website adapts effortlessly —
+            pixel-perfect and consistent everywhere.
           </p>
         </div>
         <div class="container">
           <PhFileMagnifyingGlass :size="36" />
           <h3>SEO Optimization</h3>
           <p>
-            Built with SEO best practices to help your website rank higher in search
-            engine results.
+            Built with SEO best practices to help your website rank higher in
+            search engine results.
           </p>
         </div>
         <div class="container">
           <PhCertificate :size="36" />
           <h3>W3 Validated</h3>
           <p>
-            Code validated by W3C standards for clean, compliant, and reliable performance
-            across all devices.
+            Code that meets W3C standards — clean, compliant, and reliable
+            across browsers and devices.
           </p>
         </div>
       </div>
@@ -99,7 +101,11 @@
       <div class="grid">
         <div v-for="item in skills" :key="item.id" class="container">
           <div class="box">
-            <img :key="isDark" :src="isDark ? item.iconDark : item.icon" alt="" />
+            <img
+              :key="isDark"
+              :src="isDark ? item.iconDark : item.icon"
+              alt=""
+            />
           </div>
           <p>{{ item.name }}</p>
         </div>
@@ -166,26 +172,22 @@ const workProcess = [
   {
     number: "01",
     title: "Discovery & Planning",
-    text:
-      "We discuss your goals, audience, and project scope to align on vision,features, and timelines.",
+    text: "We kick things off by understanding your goals, audience, and brand. This helps define a clear roadmap before a single line of code is written.",
   },
   {
     number: "02",
     title: "Design & Structure",
-    text:
-      "I create a layout and user interface plan to ensure the structure is clean, responsive, and user-friendly.",
+    text: "Wireframes, layouts, and structure come to life — clean, intuitive, and focused on a seamless user journey.",
   },
   {
     number: "03",
     title: "Frontend Development",
-    text:
-      "Using HTML, CSS, JavaScript, and modern frameworks, I bring the design to life with clean and optimized code.",
+    text: "I translate designs into reality using Vue, Nuxt, and modern web tools — delivering fast, accessible, and scalable interfaces.",
   },
   {
     number: "04",
     title: "Testing & Delivery",
-    text:
-      "I test across devices and browsers, fix bugs, and deliver a fast, accessible, and fully functional website.",
+    text: "Every project is tested across browsers and devices. Once polished, optimized, and approved — it’s launch time.",
   },
 ];
 
@@ -207,27 +209,23 @@ const skills = [
 const faqs = ref([
   {
     title: "What tech do you use?",
-    body:
-      "HTML5, CSS3 (or SCSS), vanilla JS, and Vue/Nuxt. I can integrate Tailwind or Bootstrap if requested.",
+    body: "I primarily use HTML5, CSS3 (or SCSS), JavaScript, and Vue/Nuxt/Quasar",
   },
   {
     title: "What do you need from Me?",
-    body:
-      "Provide design files (Figma, XD, Sketch), brand assets (logos, colors, fonts), and content. If you lack designs, I can help with basic wireframes.",
+    body: "Design files (Figma, XD, or Sketch), brand assets (logos, colors, fonts), and project content. No design yet? No worries — I can help with wireframes.",
   },
   {
     title: "In how many days can you deliver?",
-    body: "I can deliver in time ranging from 3 - 10 days depending on the project.",
+    body: "Depending on scope, most projects take between 3 to 15 days. I’ll give you a clear timeline before we start.",
   },
   {
     title: "Can you handle deployment?",
-    body:
-      "Yes. I supply deployment instructions for Netlify, Vercel, or your preferred host. Assisted deployment is available for an extra fee.",
+    body: "Absolutely. I can guide or handle deployment to platforms like Netlify, Vercel, or custom hosts.",
   },
   {
     title: "Is SEO included?",
-    body:
-      "I implement SEO basics—semantic HTML, meta tags, and optimized assets to boost ranking and performance.",
+    body: "Yes — I handle core SEO optimizations: semantic HTML, meta tags, and optimized images for better performance and rankings.",
   },
 ]);
 

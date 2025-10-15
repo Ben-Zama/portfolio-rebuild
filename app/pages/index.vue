@@ -8,27 +8,26 @@
             <p class="caption">Frontend Web Developer</p>
             <h2>Benzama Musa</h2>
             <p>
-              Creative web developer crafting fast, responsive and user-friendly websites
-              with modern technologies
+              Building sleek, fast, and user-first websites that don’t just work — they wow.
             </p>
           </div>
         </gridCard>
       </div>
 
       <NuxtLink to="/about" class="grid-card-container about">
-        <gridCard caption="More about me" title="About">
+        <gridCard caption="Get to know me better" title="About me">
           <p>Benzama</p>
         </gridCard>
       </NuxtLink>
 
       <NuxtLink to="/portfolio" class="grid-card-container project">
-        <gridCard caption="What I've worked on" title="Projects">
+        <gridCard caption="Explore my works" title="Projects">
           <img src="~/assets/images/project.svg" alt="" />
         </gridCard>
       </NuxtLink>
 
       <NuxtLink to="/services" class="grid-card-container services">
-        <gridCard caption="What I do" title="Services">
+        <gridCard caption="Here's what I can do for you" title="Services">
           <div class="icons">
             <PhDeviceMobile :size="32" />
             <PhGlobe :size="32" />
@@ -66,7 +65,7 @@
       </div>
 
       <div class="grid-card-container links">
-        <gridCard caption="Connect with me" title="Profiles" :showButton="false">
+        <gridCard caption="Find me around the web" title="Profiles" :showButton="false">
           <div class="icons">
             <a href="">
               <i class="bi bi-github"></i>
@@ -84,12 +83,12 @@
       <div class="grid-card-container stats">
         <gridCard :showButton="false" :showTitle="false">
           <div class="box">
-            <countUp :end-val="2" :duration="5"/>
-            <p>Years Experience</p>
+            <countUp :end-val="3" :duration="5"/>
+            <p>Years crafting code</p>
           </div>
           <div class="box">
             <countUp :end-val="25" :duration="5" :options="counterOptions" />
-            <p>Completed Projects</p>
+            <p>Projects completed (and counting)</p>
           </div>
         </gridCard>
       </div>

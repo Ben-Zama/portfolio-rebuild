@@ -33,7 +33,7 @@
       </div>
       <div class="actions">
         <themeToggle />
-        <CtaButton name="Let's talk" class="cta-button" />
+        <CtaButton name="Let's connect" class="cta-button" />
         <hamburger v-model="isMenuOpen" />
       </div>
     </header>
@@ -44,12 +44,12 @@
       <div class="top">
         <div class="span">
           <p>
-            Let's work <br />
-            <span>together</span>
+            Websites that <span>work</span> & <span>wow</span>.<br />
+            Let's <span>build</span> yours
           </p>
           <div class="container">
             <div class="box">
-              <p>looking to collaborate?</p>
+              <p>Got a project in mind?</p>
               <a>
                 <p>benzamasimon@gmail.com</p>
                 <div class="icons">
@@ -59,7 +59,7 @@
               </a>
             </div>
             <div class="box">
-              <p>Give me a call</p>
+              <p>Prefer to talk it out?</p>
               <a>
                 <p>+234 704 2195 431</p>
                 <div class="icons">
@@ -92,7 +92,10 @@
       <hr />
 
       <div class="bottom">
-        <p>All rights reserved. Designed and developed by <a href="">BENZAMA</a></p>
+        <p>
+          &copy; 2025 - Designed and developed by <a href="">BENZAMA</a>, with
+          love and a lot of caffeine ☕
+        </p>
         <div class="socials">
           <a target="_blank" href="#">
             <i class="bi bi-linkedin"></i>

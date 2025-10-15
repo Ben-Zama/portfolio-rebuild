@@ -5,12 +5,13 @@
         <div class="heading">
           <pageTitle title="Contact" />
           <h2>Get in <span>touch</span></h2>
+          <p class="text">Got an idea, a project, or just want to say hi? I’d love to hear from you.</p>
         </div>
         <hr />
         <div class="box">
           <PhEnvelope :size="32" />
           <div class="text">
-            <p>Send an email</p>
+            <p>Send me an email</p>
             <a>Benzamasimon@gmail.com</a>
           </div>
         </div>
@@ -53,11 +54,11 @@
         <div class="span">
           <div class="input-control">
             <input type="number" placeholder=" " />
-            <label>Phone</label>
+            <label>Phone (optional)</label>
           </div>
           <div class="input-control">
             <input type="text" placeholder=" " />
-            <label>Subject</label>
+            <label>Subject (optional)</label>
           </div>
         </div>
         <div class="input-control textarea-control">
@@ -65,7 +66,7 @@
           <label>Message</label>
         </div>
         <button type="submit">
-          <ctaButton name="Submit" />
+          <ctaButton name="Send message" />
         </button>
       </form>
     </div>
